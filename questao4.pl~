@@ -1,0 +1,2 @@
+maximo([X], X).
+maximo([H|L], X) :- maximo(L, Maior), ( H > Maior -> X = H ; X = Maior ).
